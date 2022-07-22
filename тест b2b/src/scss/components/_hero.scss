@@ -1,0 +1,122 @@
+.hero {
+  min-height: 785px;
+  padding-top: 60px;
+  background-color: var(--back-color);
+
+  &-container {
+    display: flex;
+
+    @include big-desktop {
+      display: block;
+    }
+  }
+
+  &-title {
+    width: 702px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--light-color);
+
+    span {
+      color: var(--primary-color);
+      font-size: 80px;
+    }
+
+    &--h2 {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 15px;
+      color: var(--light-color);
+      border-bottom: 1px solid var(--primary-color);
+    }
+  }
+
+  &-list {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 255px;
+      top: 0;
+      left: 0;
+      border-right: 2px solid var(--primary-color);
+    }
+  }
+
+  &-items {
+    position: relative;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    svg {
+      padding-right: 10px;
+      position: absolute;
+      top: 0;
+      left: -14px;
+      transform: scale(3);
+    }
+  }
+
+  &-btn {
+    position: relative;
+    margin-left: 136px;
+    padding: 20px 86px;
+    color: var(--heavy-color);
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s linear;
+
+    &:hover {
+      color: var(--primary-color);
+      background-color: var(--light-color);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 32px;
+      top: 0;
+      left: -130px;
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
+
+  &-right {
+    min-height: 734px;
+    padding-top: 100px;
+    padding-left: 400px;
+    background-position: top;
+    background-size: 585px 735px;
+    background-repeat: no-repeat;
+    background-image: url(../img/human.png);
+  }
+
+}
+
+.descr-items {
+  color: var(--primary-color);
+  font-size: 15px;
+  line-height: 10px;
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

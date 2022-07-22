@@ -1,0 +1,17 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "GraphikLCG", sans-serif;
+  --content-width: 1410px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --silverChalice-color: #A3A3A3;
+  --wildSand-color: #F5F5F5;
+  --codGray-color: #0A0A0A;
+  --gallery-color: #EBEBEB;
+  --hoverGreen-color: #82B638;
+}

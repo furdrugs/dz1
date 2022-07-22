@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__main-block main-block">
+					<h1 class="page__title">Оформление заказа</h1>
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<section class="main-block__delivery">
+								<h2 class="main-block__title section-title">Доставка</h2>
+								<div class="main-block__ways">
+									<div class="main-block__wrapper">
+										<div type="submit" class="main-block__item item-main-block">
+											<div class="item-main-block__delivery">
+												<h3 class="item-main-block__title title title_1">Почта России, курьер — 24-26 сент.</h3>
+												<div class="item-main-block__descr descr">ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</div>
+											</div>
+											<div data-da=".title_1, 991.98" class="item-main-block__price">+375 ₽</div>
+										</div>
+										<div data-da=".main-block__wrapper, 768, first" class="main-block__item item-main-block">
+											<div class="item-main-block__delivery">
+												<h3 class="item-main-block__title title title_2">Лабиринт, курьер — 25 сент.</h3>
+												<div class="item-main-block__descr descr">Можайское шоссе, д. 21, кв. 50, Москва, 121471</div>
+											</div>
+											<div data-da=".title_2, 991.98" class="item-main-block__price">0 ₽</div>
+										</div>
+									</div>
+									<a href="#" class="main-block__link link">Выбрать новое место и способ</a>
+								</div>
+								<div class="main-block__date">
+									<ul class="main-block__list">
+										<li class="main-block__items">
+											<h3 class="title">пн, 24 сен</h3>
+											<p class="descr">10:00–19:00</p>
+										</li>
+										<li class="main-block__items">
+											<h3 class="title">чт, 27 сен</h3>
+											<p class="descr">10:00–19:00</p>
+										</li>
+									</ul>
+									<a href="#" class="main-block__link link">Другие дата и время</a>
+								</div>
+								<div class="checkbox">
+									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Viber/СМС уведомления о статусе заказа</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Оставить у двери (бесконтактная доставка)</span></label>
+								</div>
+		
+							</section>
+							<section class="main-block__client client-main-block">
+								<h2 class="client-main-block__title">Получатель</h2>
+								<div class="client-main-block__select">
+									<div class="client-main-block__name">
+										<select name="form[]" class="client-main-block__form">
+											<option value="1" selected>Лебедев Арсен Андреевич</option>
+											<option value="2">Вольфганг Вениаминович</option>
+											<option value="3">Трофимов Мирослав Степанович</option>
+											<option value="4">Беляев Мирослав Михайлович</option>
+										</select>
+										<a data-da=".client-main-block__title, 991.98" href="#" class="client-main-block__link link">Новый получатель</a>
+									</div>
+									<div class="client-main-block__tel">
+										<select name="form[]" class="client-main-block__form">
+											<option value="1" selected>+7 910 234-56-78</option>
+											<option value="2">+7 987 148-29-87</option>
+											<option value="3">+7 987 850-92-88</option>
+											<option value="4">+7 987 253-70-87</option>
+										</select>
+										<a href="#" class="client-main-block__link link">Новый телефон</a>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="main-block__secondary-block secondary-block">
+							<h2 class="secondary-block__title section-title">В заказе 4 товара <span>(2 кг)</span></h2>
+							<div class="secondary-block__cost">
+								<ul class="secondary-block__list">
+									<li class="secondary-block__item descr">
+										Цена товаров
+									</li>
+									<li class="secondary-block__item">
+										<span>29 456 ₽</span>
+									</li>
+								</ul>
+								<ul class="secondary-block__list">
+									<li class="secondary-block__item descr">
+										Все скидки
+									</li>
+									<li class="secondary-block__item">
+										<span>–7 732 ₽</span>
+									</li>
+								</ul>
+								<ul class="secondary-block__list">
+									<li class="secondary-block__item descr">
+										Скидка за предоплату
+									</li>
+									<li class="secondary-block__item">
+										<span>–3%</span> 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

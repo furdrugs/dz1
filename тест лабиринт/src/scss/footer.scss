@@ -1,0 +1,119 @@
+//====================================================================================================
+.footer {
+    background: #F8F8F8;
+    padding-top: rem(19);
+    padding-bottom: rem(19);
+    border: 1px solid #C5C5C5;
+    @media (max-width:$tablet){
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+    }
+
+	&__container { 
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:$tablet){
+            display: block;
+            padding: rem(16);
+        }
+    }
+
+	&__button {
+        color: $lightColor;
+        padding: rem(20) rem(50);
+        border: 1px solid #E01D1D;
+        border-radius: 4px;
+        transition: background 0.5s linear, color 0.5s linear;
+        background: linear-gradient(0deg, #EC0002, #EC0002), linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #D02626 99.65%), #FF0000;
+        @media (max-width:$tablet){
+            width: 100%;
+            padding: rem(16) rem(20);
+            font-weight: 700;
+            font-size: rem(17);
+            line-height: math.div(21 , 17);
+        }
+        &:active, 
+        &:hover {
+            color: rgb(39, 39, 39);
+            background: $lightColor;
+        }
+    }
+
+    &__cost {
+        display: flex;
+        align-items: center;
+        gap: rem(160);
+        @media (max-width:$tablet){
+            display: flex;
+            @include adaptiveValue("gap", 50, 10);
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__link {
+        display: none;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: math.div(18, 14);
+        color: $linkColor;
+        margin-left: auto;
+        @media (max-width:$tablet){
+            display: block;
+            @include adaptiveValue("font-size", 14, 12);
+        }
+    }
+
+	&__descr { 
+        font-weight: 400;
+        font-size: rem(22);
+        line-height: math.div(28 , 22);
+        color: $primaryColor;
+        @media (max-width:$tablet){
+            font-weight: 700;
+            @include adaptiveValue("font-size", 14, 12);
+            line-height: math.div(18 , 14);
+        }
+    }
+
+	&__price { 
+        font-weight: 700;
+        font-size: rem(35);
+        line-height: math.div(44 , 35);
+        color: $primaryColor;
+        @media (max-width:$tablet){
+            font-weight: 700;
+            @include adaptiveValue("font-size", 14, 12);
+            line-height: math.div(18 , 14);
+        }
+    }
+
+}
+
+.popup {
+    &__close {
+        width: 100%;
+        padding: rem(16) rem(20);
+        font-weight: 500;
+        font-size: rem(17);
+        line-height: math.div(21 , 17);
+        color: $primaryColor;
+        border: 1px solid #D6D6D6;
+        border-radius: 4px;
+    }
+
+    &__cost {
+        margin-bottom: rem(10);
+    }
+
+    &__list {
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        border-top: 1px solid #000;
+    }
+    
+}
+
+   
+//====================================================================================================
